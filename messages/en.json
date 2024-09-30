@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "title": "Takeshi's Portfolio",
+    "description": "Discover Takeshi's portfolio, showcasing his development skills and passion in his development journey.",
+    "og:title": "Takeshi's Portfolio",
+    "og:description": "Explore my latest projects and learn about my journey as a passionate front-end developer specializing in React, Next.js, and TypeScript."
+  },
+  "header": {
+    "aboutMe": "About Me",
+    "projects": "Projects",
+    "contact": "Contact",
+    "switchLanguage": "Toggle Switch Language Menu",
+    "language": "Language",
+    "english": "English",
+    "japanese": "Japanese"
+  },
+  "index": {
+    "heroTitle": "Passionate <span>Programmer</span>",
+    "heroIntroduction": "Hello, I'm <span>Takeshi</span>, a passionate who loves <br></br> to code and create amazing things.",
+    "skill": "Tech Stack",
+    "me7yearsAgo": "Me 7 years ago",
+    "tryHovering": "Try hovering these!",
+    "curlyArrow": "Curly Arrow",
+    "jsDescription": "JavaScript is a high-level, interpreted programming language that conforms to the ECMAScript specification.",
+    "tsDescription": "TypeScript is a strict syntactical superset of JavaScript that adds optional static typing to the language.",
+    "reactDescription": "React is a JavaScript library for building user interfaces.",
+    "nextDescription": "Next.js is a React framework that enables functionality such as server-side rendering and generating static websites for React based web applications.",
+    "nodeDescription": "Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser.",
+    "expressDescription": "Express.js is a web application framework for Node.js, a back-end JavaScript runtime environment.",
+    "awsDescription": "Amazon Web Services (AWS) is a subsidiary of Amazon providing on-demand cloud computing platforms and APIs to individuals, companies, and governments, on a metered pay-as-you-go basis.",
+    "redisDescription": "Redis is an open-source, in-memory data structure store, used as a database, cache, and message broker.",
+    "aboutMe": "About Me",
+    "aboutMeDescription": "Greetings, I'm <strong>Takeshi</strong> from the Philippines and currently lives in Japan. My <strong>unweavering</strong> passion drives me to continually <strong>enchance my skills</strong> and embrace new challenges each day. I'm dedicated to <strong>personal growth</strong> and constantly striving to expand my knowledge in the field of development.",
+    "featuredProjects": "Project",
+    "omnipartsDescription": "I created Omniparts to deepen my understanding of full-stack e-commerce development, focusing on creating a payment system and an admin dashboard. I started by building the front-end pages required for the website, and then proceeded to develop and integrate the back-end using Next.js and tRPC. My main struggle was with the payment system, particularly handling webhooks and using the Stripe SDK to simulate the payment process.",
+    "budgetplexDescription": "Budgetplex was built because a friend needed an app to track their salary, and I wanted to apply my newly acquired knowledge of tRPC and shadcn/ui. It includes features such as budget tracking, salary tracking, bill notices, and financial goals. While developing it, I faced challenges involving date and time functionalities, but despite these difficulties, I successfully overcame them and gained valuable experience in date and time manipulation.",
+    "zeetaaDescription": "Zeetaa was a school project where I collaborated with a partner who handled the design and CSS, and I took it as an opportunity to learn how to create a real-time chat feature. The project was challenging due to the complex database setup for friend requests and chat tables, and I also needed to convert the CSS into module.css for proper functionality. Despite these difficulties, including building the real-time chat feature, we completed the project successfully. This experience helped me sharpen my backend development skills, solve problems more effectively, and work efficiently in a team setting.",
+    "gamiplexDescription": "Gamiplex was created to apply my newly acquired back-end skills with Next.js. The project is a game library where users can browse games, see details, and save favorites through user authentication. I started by building the back-end with Next.js, focusing on integrating game data and user management. One of the main struggles was deciding whether to use client-side or server-side rendering. Although I overcame the challenge, I now realize I made the wrong choice, and I plan to rebuild it following best practices.",
+    "iFindGalleryDescription": "iFindGallery was built to apply my newly learned TypeScript skills. It features a gallery where users can explore images, download them, and view other works by the author. I faced challenges building the UI and spent around 8 hours resolving a persistent type error. Despite these struggles, I gained valuable experience in debugging TypeScript and improving UI development.",
+    "viewWebsite": "View Website",
+    "viewSourceCode": "View Source Code",
+    "contactMe": "Contact Me",
+    "contactMeDescription": "Thank you for visiting my portfolio. If you have any questions or want to work with me, feel free to contact me.",
+    "sendEmail": "Send Email"
+  }
+}

@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://takish155.com/sitemap.xml
