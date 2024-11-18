@@ -1,9 +1,11 @@
 import { NextIntlClientProvider, useMessages } from "next-intl";
 import "./../globals.css";
-import { unstable_setRequestLocale } from "next-intl/server";
+import { setRequestLocale, unstable_setRequestLocale } from "next-intl/server";
 import Header from "@/components/header/Header";
 import { M_PLUS_1p, Poppins } from "next/font/google";
 import Footer from "@/components/footer/Footer";
+import { routing } from "@/routing";
+import { notFound } from "next/navigation";
 
 const locales = ["en", "ja"];
 
@@ -31,7 +33,11 @@ export default function LocaleLayout({
   params: { locale: string };
 }) {
   const messages = useMessages();
-  unstable_setRequestLocale(locale);
+  if (!routing.locales.includes(locale as any)) {
+    notFound();
+  }
+
+  setRequestLocale(locale);
 
   return (
     <html lang={locale} className={`${poppins.variable} ${m_plus.variable}`}>

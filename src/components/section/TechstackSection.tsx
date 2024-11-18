@@ -2,101 +2,28 @@ import React from "react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import TechStackHoverCard from "../TechStackHoverCard";
+import techStack from "@/constant/techStack";
 
 const TechstackSection = () => {
   const t = useTranslations("index");
 
   return (
     <section className="flex items-center">
-      <div className="flex gap-8 flex-wrap relative">
-        <div className="flex gap-2 ">
+      <div className="flex gap-4 flex-wrap relative">
+        {techStack.map((tech) => (
           <TechStackHoverCard
-            title="Javascript"
-            description={t("jsDescription")}
+            key={tech.title}
+            title={tech.title}
+            description={t(tech.description as any)}
           >
             <Image
-              src="/public/image/tech-stack/js.png"
-              alt="JavaScript"
+              src={`/public/image/tech-stack/${tech.imgPath}.png`}
+              alt={tech.title}
               height={50}
               width={50}
             />
           </TechStackHoverCard>
-
-          <TechStackHoverCard
-            title="TypeScript"
-            description={t("tsDescription")}
-          >
-            <Image
-              src="/public/image/tech-stack/ts.png"
-              alt="TypeScript"
-              height={50}
-              width={50}
-            />
-          </TechStackHoverCard>
-        </div>
-        <div className="flex gap-2">
-          <TechStackHoverCard title="React" description={t("reactDescription")}>
-            <Image
-              src="/public/image/tech-stack/react.png"
-              alt="React"
-              height={50}
-              width={50}
-            />
-          </TechStackHoverCard>
-          <TechStackHoverCard
-            title="Next.js"
-            description={t("nextDescription")}
-          >
-            <Image
-              src="/public/image/tech-stack/next.png"
-              alt="Next.js"
-              height={50}
-              width={50}
-            />
-          </TechStackHoverCard>
-        </div>
-        <div className="flex gap-2">
-          <TechStackHoverCard
-            title="Node.js"
-            description={t("nodeDescription")}
-          >
-            <Image
-              src="/public/image/tech-stack/node.png"
-              alt="Node.js"
-              height={50}
-              width={50}
-            />
-          </TechStackHoverCard>
-          <TechStackHoverCard
-            title="Express"
-            description={t("expressDescription")}
-          >
-            <Image
-              src="/public/image/tech-stack/express.png"
-              alt="Express"
-              height={50}
-              width={50}
-            />
-          </TechStackHoverCard>
-        </div>
-        <div className="flex gap-2">
-          <TechStackHoverCard title="AWS" description={t("awsDescription")}>
-            <Image
-              src="/public/image/tech-stack/aws.png"
-              alt="AWS"
-              height={50}
-              width={50}
-            />
-          </TechStackHoverCard>
-          <TechStackHoverCard title="Redis" description={t("redisDescription")}>
-            <Image
-              src="/public/image/tech-stack/redis.png"
-              alt="Redis"
-              height={50}
-              width={50}
-            />
-          </TechStackHoverCard>
-        </div>
+        ))}
         <div className="absolute top-16 left-20 max-lg:hidden">
           <Image
             src="/public/image/curly-arrow.png"

@@ -2,7 +2,7 @@ import { Card, CardHeader } from "@/components/ui/card";
 import React from "react";
 import { Button } from "../ui/button";
 import Link from "next/link";
-import { LanguagesIcon } from "lucide-react";
+import { Github, GithubIcon, LanguagesIcon } from "lucide-react";
 import SwitchLanguage from "./SwitchLanguage";
 import { useLocale, useTranslations } from "next-intl";
 
@@ -20,10 +20,14 @@ const Header = () => {
           <nav className="max-sm:hidden my-auto !mt-0">
             <ul className="flex gap-4 items-center">
               <li>
-                <Link href="#about-me">{t("aboutMe")}</Link>
-              </li>
-              <li>
-                <Link href="#projects">{t("projects")}</Link>
+                <Link
+                  href="#about-me"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1"
+                >
+                  Github
+                </Link>
               </li>
               <li>
                 <Link href="#contact-me">

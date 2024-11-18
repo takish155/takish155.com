@@ -1,13 +1,19 @@
 import HeroSection from "@/components/section/HeroSection";
-import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
+import {
+  getTranslations,
+  setRequestLocale,
+  unstable_setRequestLocale,
+} from "next-intl/server";
 import type { Metadata } from "next";
 import dynamic from "next/dynamic";
+import { routing } from "@/routing";
+import { notFound } from "next/navigation";
 
 const AboutMeSection = dynamic(
   () => import("@/components/section/AboutMeSection")
 );
 const FeaturedProjectSection = dynamic(
-  () => import("@/components/section/project_section/_FeaturedProjectSection")
+  () => import("@/components/section/FeaturedProjectSection")
 );
 
 const ContactSection = dynamic(
@@ -33,7 +39,11 @@ export async function generateMetadata({
 }
 
 export default function Home({ params }: { params: { locale: string } }) {
-  unstable_setRequestLocale(params.locale);
+  if (!routing.locales.includes(params.locale as any)) {
+    notFound();
+  }
+
+  setRequestLocale(params.locale);
 
   return (
     <main

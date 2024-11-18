@@ -21,6 +21,8 @@
     "me7yearsAgo": "7年前の私",
     "tryHovering": "これらにカーソルを合わせてみてください！",
     "curlyArrow": "曲線矢印",
+    "phpDescription": "PHPは、特にウェブ開発に適している人気のある汎用スクリプト言語です。",
+    "sqlDescription": "SQLは、リレーショナルデータベース管理システムのための標準化されたクエリ言語です。",
     "jsDescription": "JavaScriptは、ECMAScript仕様に準拠した高水準のインタープリタ型プログラミング言語です。",
     "tsDescription": "TypeScriptは、JavaScriptの厳密な構文上位集合で、言語にオプションの静的型付けを追加します。",
     "reactDescription": "Reactは、ユーザーインターフェースを構築するためのJavaScriptライブラリです。",
